@@ -32,9 +32,17 @@ public class ObjectPairDriver {
      * @return Название стадиона с наибольшей вместимостью
      */
     public static String largestStadium(ObjectPair[] stadiums) {
-        // TODO: реализуйте это метод в соответствии с комментариями
-
-        return "";
+        ObjectPair largest = stadiums[0];
+        for (int i = 0; i < stadiums.length; i++) {
+            if(Double.valueOf(stadiums[i].getSecond().toString())>Double.valueOf(largest.getSecond().toString())){
+                largest=stadiums[i];
+            }
+        }
+        return largest.getFirst().toString();
     }
 
+    /*
+    Этот код компилируется потому что тип массива соответствует типу объекта
+    stadiums[0] = new ObjectPair("Bridgeforth Stadium", 25000);
+     */
 }
