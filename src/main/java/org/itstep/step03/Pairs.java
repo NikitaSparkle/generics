@@ -12,6 +12,7 @@ public class Pairs<K, V> implements Iterable<Pair<K, V>> {
      * Создайте коллекцию, в которой будут храниться элементы, добавленные парами.
      */
     public Pairs() {
+
     }
 
     /**
