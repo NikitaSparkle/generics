@@ -5,6 +5,7 @@ import org.itstep.step01.ObjectPair;
 public class PairDriver {
     public static void main(String[] args) {
         Pair[] stadiums = new Pair[3];
+        // Где здесь generic. Это raw type?
         stadiums[0] = new Pair("Bridgeforth Stadium", 25000);
         stadiums[1] = new Pair("Michigan Stadium", 109901);
         stadiums[2] = new Pair("Lane Stadium", "66,233");
