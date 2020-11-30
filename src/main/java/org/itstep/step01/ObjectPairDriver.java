@@ -34,6 +34,7 @@ public class ObjectPairDriver {
     public static String largestStadium(ObjectPair[] stadiums) {
         ObjectPair largest = stadiums[0];
         for (int i = 0; i < stadiums.length; i++) {
+            // Это не правильно. Нужно было явно приводить к Integer, а не конвертировать
             if(Double.valueOf(stadiums[i].getSecond().toString())>Double.valueOf(largest.getSecond().toString())){
                 largest=stadiums[i];
             }
