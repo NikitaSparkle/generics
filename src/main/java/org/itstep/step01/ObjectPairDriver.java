@@ -18,7 +18,7 @@ public class ObjectPairDriver {
         ObjectPair[] stadiums = new ObjectPair[3];
         stadiums[0] = new ObjectPair("Bridgeforth Stadium", 25000);
         stadiums[1] = new ObjectPair("Michigan Stadium", 109901);
-        stadiums[2] = new ObjectPair("Lane Stadium", "66,233");
+        stadiums[2] = new ObjectPair("Lane Stadium", 66.233);
 
         System.out.println(stadiums[0]);
 
@@ -40,6 +40,7 @@ public class ObjectPairDriver {
         }
         return largest.getFirst().toString();
     }
+
 
     /*
     Этот код компилируется потому что тип массива соответствует типу объекта
